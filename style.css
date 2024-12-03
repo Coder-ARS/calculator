@@ -1,0 +1,141 @@
+body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center; /* Centers horizontally */
+      align-items: center; 
+      transition: background-color 1s, color 0.8s;    /* Centers vertically */
+    }
+#p{
+    height: 675px;
+    width: 420px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+}
+#text{
+    height: 150px;
+    width: 380px;
+     margin: 30px 20px 20px 20px; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+}
+.theme-buttons {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+.theme-button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: rgb(255, 208, 0);
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+}
+.container {
+    width: 400px; /* Set the width of the div */
+    /* padding: 20px; Add padding inside the div */
+    /* border: 2px solid #ccc; Border around the div */
+    /* border-radius: 10px; Rounded corners */
+    background-color: rgb(255, 255, 255); /* Light background color */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+  }
+
+  .custom-textfield {
+    width: 90%; /* Custom width for the text field, 80% of div's width */
+    height: 40px; /* Custom height for the text field */
+     /* padding: 10px;Padding inside the text field */
+    font-size: 40px; /* Font size for the text */
+    /* border: 2px solid #007BFF; Border color for the text field */
+    background-color: rgb(255, 255, 255);
+    /* border-radius: 5px; Rounded corners for the text field */
+    border: none;
+    outline: none; /* Remove the outline when focused */
+    text-align-last: right;
+    caret-color: transparent;
+  }
+  #text-field2 {
+    font-size: 20px;
+  }
+.button{
+    height: 80px;
+    width: 105px;
+    margin: 25px 25px 25px 25px; 
+    background-color: rgb(255, 255, 255);
+}
+.button-grid button:hover {
+  background-color: #ffbb00;  /* Darker green on hover */
+}
+
+.button-grid button:active {
+  background-color: #ffa600;  /* Even darker green on press */
+}
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 3 equal columns */
+    gap: 5px; /* Adds space between the buttons */
+    justify-items: center; /* Centers the buttons horizontally */
+    align-items: center; /* Centers the buttons vertically */
+     padding: 10px; /* Adds some padding around the grid */
+  }
+
+  .button-grid button {
+    height: 80px;
+    width: 80px; /* Set a height for the buttons */
+    background-color: rgb(255, 208, 0); /* Green background for buttons */
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 100%;
+    font-size: 35px;
+    font-weight: 200;
+    /* cursor: pointer; */
+  }
+
+
+body.cloud-mode {
+    background-color: rgb(211, 211, 211);;
+  }
+  body.cloud-mode #p {
+    background-color: rgb(138, 138, 178);
+  }
+  body.cloud-mode .button-grid button{
+    background-color: rgb(173, 216, 230);
+  }
+  body.cloud-mode .theme-button {
+    color: rgb(0, 0, 0);
+    background-color: rgb(230, 230, 250);
+  }
+  body.cloud-mode .button-grid button:hover {
+    background-color: rgb(103, 167, 189);  /* Darker green on hover */
+  }
+  
+  body.cloud-mode .button-grid button:active {
+    background-color: rgb(51, 116, 138);  /* Even darker green on press */
+  }
+
+  body.dark-mode {
+    background-color: rgb(34, 34, 34);
+  }
+  body.dark-mode #p {
+    background-color: grey;
+  }
+  body.dark-mode .button-grid button{
+    background-color: white;
+  }
+  body.dark-mode .theme-button {
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+  }
+  body.dark-mode .button-grid button:hover {
+    background-color: rgb(177, 152, 152);  /* Darker green on hover */
+  }
+  
+  body.dark-mode .button-grid button:active {
+    background-color: rgb(133, 104, 104);  /* Even darker green on press */
+  }

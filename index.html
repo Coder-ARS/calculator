@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        
+        
+    </head>
+    <body class="green">
+        <div class="theme-buttons">
+            <button id="light-mode" class="theme-button">Light Mode</button>
+            <button id="cloud-mode" class="theme-button">Cloud Mode</button>
+            <button id="dark-mode" class="theme-button">Dark Mode</button>
+          </div>
+        <div id="p">
+            <div class="container" id="text">
+                <input type="text" id="text-field" class="custom-textfield" oninput="restrictInput(event)" placeholder="">
+                <input type="text" id="text-field2" class="custom-textfield" placeholder="">
+            </div>
+            <div class="button-grid">
+                <button onclick="clearText()">AC</button>
+                <button onclick="changeText('%')">%</button>
+                <button onclick="clearLastInput()">C</button>
+                <button onclick="changeText('÷')">÷</button>
+                <button onclick="changeText('7')">7</button>
+                <button onclick="changeText('8')">8</button>
+                <button onclick="changeText('9')">9</button>
+                <button onclick="changeText('×')">×</button>
+                <button onclick="changeText('4')">4</button>
+                <button onclick="changeText('5')">5</button>
+                <button onclick="changeText('6')">6</button>
+                <button onclick="changeText('-')">-</button>
+                <button onclick="changeText('1')">1</button>
+                <button onclick="changeText('2')">2</button>
+                <button onclick="changeText('3')">3</button>
+                <button onclick="changeText('+')">+</button>
+                <button onclick="changeText('00')">00</button>
+                <button onclick="changeText('0')">0</button>
+                <button onclick="changeText('.')">.</button>
+                <button onclick="EqualPressed()">=</button>
+            </div>
+            
+            
+        </div>
+        <script src="about.js"></script>
+    </body>
+</html>
